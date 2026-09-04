@@ -1206,8 +1206,8 @@ function ResumeOverview({ theme }: { theme?: string }) {
 function ContactCard({ theme }: { theme?: string }) {
   const socials = [
     { name: 'Resume', url: 'https://drive.google.com/', label: 'Resume' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/', label: 'LinkedIn' },
-    { name: 'GitHub', url: 'https://github.com/', label: 'GitHub' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/devraj-kumawat-302289271', label: 'LinkedIn' },
+    { name: 'GitHub', url: 'https://github.com/devraj-kumawt19', label: 'GitHub' },
     { name: 'Email', url: 'mailto:rajkumawat3905@gmail.com', label: 'Email' }
   ];
 

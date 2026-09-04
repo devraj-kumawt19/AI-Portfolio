@@ -98,8 +98,8 @@ This is the verified grounding database for Devraj Kumawat. It contains his prof
 
 * **Email**: `rajkumawat3905@gmail.com`
 * **Phone**: `+91-9024722912`
-* **GitHub**: `[ADD MY GITHUB LINK]`
-* **LinkedIn**: `[ADD MY LINKEDIN LINK]`
+* **GitHub**: `https://github.com/devraj-kumawt19`
+* **LinkedIn**: `https://www.linkedin.com/in/devraj-kumawat-302289271`
 
 ---
 
