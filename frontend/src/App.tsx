@@ -40,12 +40,13 @@ function MemojiAvatar({ type, className = "" }: { type: 'landing' | 'chat'; clas
 
 function ProfileImage({ className = "" }: { className?: string }) {
   const [hasError, setHasError] = useState(false);
-  const profileSrc = "/7410852.PNG";
+  const profileSrc = "/public/assets/me/7410852.png";
+  const fallbackSrc = "/assets/me/devraj-placeholder.svg";
 
   if (hasError) {
     return (
       <img
-        src="https://ui-avatars.com/api/?name=Devraj+Kumawat&size=256&background=f1f5f9&color=334155"
+        src={fallbackSrc}
         alt="Devraj kumawat"
         className={className}
       />
@@ -56,7 +57,7 @@ function ProfileImage({ className = "" }: { className?: string }) {
     <img
       src={profileSrc}
       alt="Devraj kumawat"
-      className={className}
+      className={`${className} object-cover object-center`}
       onError={() => setHasError(true)}
     />
   );
@@ -476,8 +477,8 @@ function LandingView({ onQuery, theme }: { onQuery: (q: string, t: ChatMessage['
         </div>
 
         <motion.div className="mb-8 flex items-center justify-center">
-          <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-[2rem] border border-white/30 shadow-[0_25px_60px_rgba(0,0,0,0.18)] bg-white/30 overflow-hidden">
-            <ProfileImage className="w-full h-full object-cover" />
+          <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full border border-white/40 shadow-[0_25px_60px_rgba(0,0,0,0.22)] bg-white/20 overflow-hidden ring-4 ring-white/40">
+            <ProfileImage className="w-full h-full object-cover object-center" />
           </div>
         </motion.div>
 
@@ -853,10 +854,10 @@ function MeProfile({ theme }: { theme?: string }) {
   return (
     <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
       {/* Photo */}
-      <div className={`w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-[2rem] overflow-hidden shadow-sm border transition-colors duration-500 ${
-        theme === 'dark' ? 'bg-zinc-900 border-zinc-800' : 'bg-slate-100 border-slate-200/60'
+      <div className={`w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-full overflow-hidden shadow-[0_18px_40px_rgba(15,23,42,0.18)] border transition-colors duration-500 ring-4 ${
+        theme === 'dark' ? 'bg-zinc-900 border-zinc-700 ring-zinc-800/80' : 'bg-slate-100 border-slate-200/70 ring-white/80'
       }`}>
-         <ProfileImage className="w-full h-full object-cover" />
+         <ProfileImage className="w-full h-full object-cover object-center" />
       </div>
       
       {/* Details */}

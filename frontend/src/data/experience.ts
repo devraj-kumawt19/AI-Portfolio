@@ -12,6 +12,21 @@ export interface Experience {
 export const experienceData: Experience[] = [
   {
     id: "1",
+    period: "3 Months",
+    company: "System Logic Software Solutions Pvt. Ltd.",
+    role: "Software Engineer",
+    startMonth: "Jun 2024",
+    endMonth: "Aug 2024",
+    ongoing: false,
+    bullets: [
+      "Worked as a Software Engineer and contributed to application development and issue resolution.",
+      "Collaborated with the development team to build, test, and improve software features.",
+      "Helped debug technical issues and support smooth project execution in a real-world environment.",
+      "Gained practical exposure to software development workflows, teamwork, and delivery practices."
+    ]
+  },
+  {
+    id: "2",
     period: "2025-Present",
     company: "Coding Club, Poornima College",
     role: "Member / Technical Support",
@@ -26,7 +41,7 @@ export const experienceData: Experience[] = [
     ]
   },
   {
-    id: "2",
+    id: "3",
     period: "2024-Present",
     company: "Event Club, Poornima College",
     role: "Volunteer / Event Team",
